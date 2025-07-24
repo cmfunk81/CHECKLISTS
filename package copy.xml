@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <!-- Custom Applications Components -->
+    <!-- Apex Application -->
     <types>
         <members>*</members>
-        <name>CustomApplication</name>
+        <name>ApexApplication</name>
     </types>
     <!-- Apex Classes -->
     <types>
@@ -31,11 +31,10 @@
         <name>CustomObject</name>
     </types>
     <!-- Permission Set Groups -->
- <!--   <types>
+    <types>
         <members>*</members>
         <name>PermissionSetGroup</name>
     </types>
- -->   
     <!-- Permission Sets -->
     <types>
         <members>*</members>

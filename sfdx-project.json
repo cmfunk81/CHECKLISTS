@@ -1,12 +1,19 @@
 {
   "packageDirectories": [
     {
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
       "path": "force-app",
-      "default": true
+      "default": true,
+      "package": "ChecklistComponent",
+      "versionDescription": ""
     }
   ],
   "name": "CHECKLISTS",
-  "namespace": "",
+  "namespace": "cf",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "64.0"
+  "sourceApiVersion": "64.0",
+  "packageAliases": {
+    "ChecklistComponent": "0HoKa000000L2bCKAS"
+  }
 }

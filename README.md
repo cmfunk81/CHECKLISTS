@@ -82,6 +82,10 @@ Key features:
    - Edit the page and add the Checklist Task component.
    - Save and activate.
 
+3. **Assign Permissions to Users
+  - Assign Permission Set Checklist Users to all Admin Users
+  - Assign Permission Set Group Checklist Permissions to all Non-Admin Users
+
 ##Usage
 - Navigate to a Task record with an associated Checklist Instance.
 - The Lightning card will display:

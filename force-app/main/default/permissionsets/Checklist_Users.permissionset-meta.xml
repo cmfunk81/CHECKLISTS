@@ -15,6 +15,26 @@
     <description>This permission set is for the checklist solution general Users.</description>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Event.Checklist_Instance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Event.Checklist_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Checklist_Instance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Task.Checklist_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>cf_Checklist_Assigned_Item__c.Checklist_Instance__c</field>
         <readable>true</readable>
     </fieldPermissions>

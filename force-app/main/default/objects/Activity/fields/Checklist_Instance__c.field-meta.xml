@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checklist_Instance__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Record containing link to the Checklist Assigned Item.</description>
+    <label>Checklist Instance</label>
+    <referenceTo>cf_Checklist_Instance__c</referenceTo>
+    <relationshipLabel>Checklist Instance</relationshipLabel>
+    <relationshipName>Checklist_Instance</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

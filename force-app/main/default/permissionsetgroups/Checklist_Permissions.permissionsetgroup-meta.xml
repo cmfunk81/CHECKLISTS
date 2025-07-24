@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This group will be used to provide both full access to Admins and general access to Non-Admin Users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Checklist Permissions</label>
+    <mutingPermissionSets>Checklist_Permissions_Muted</mutingPermissionSets>
+    <permissionSets>Checklist_Users</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

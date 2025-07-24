@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The Executing User whom checked the Checklist Item as Completed.</description>
+    <label>Completed By</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Checklist_Item_Completed_By</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

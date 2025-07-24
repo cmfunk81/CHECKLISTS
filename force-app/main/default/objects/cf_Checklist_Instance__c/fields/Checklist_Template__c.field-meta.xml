@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checklist_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Links the instance back to its originating template.</inlineHelpText>
+    <label>Checklist Template</label>
+    <referenceTo>cf_Checklist_Template__c</referenceTo>
+    <relationshipLabel>Checklist Instance Checklist Template</relationshipLabel>
+    <relationshipName>Checklist_Instance_Checklist_Template</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

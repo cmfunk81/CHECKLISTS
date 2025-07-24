@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Links the instance back to its originating template. --></help>
+    <label><!-- Checklist Template --></label>
+    <name>Checklist_Template__c</name>
+    <relationshipLabel><!-- Checklist Instance Checklist Template --></relationshipLabel>
+</CustomFieldTranslation>

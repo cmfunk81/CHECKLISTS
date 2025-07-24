@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title={checklistInstanceName} icon-name="utility:entitlement">
+<div class="progress-container slds-m-top_medium">
+                <div class="progress-label">Progress: {progress}%</div>
+                <div class="progress-bar-background">
+                    <div
+                        class="progress-bar-fill"
+                        style={progressStyle}
+                        role="progressbar"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow={progress}>
+                    </div>
+                </div>
+            </div>
+
+        <div class="slds-p-around_medium">
+            <template if:true={checklistItems}>
+                <template for:each={checklistItems} for:item="item">
+                    <div key={item.Id} class="slds-box slds-m-bottom_small">
+                        <lightning-input
+                            type="checkbox"
+                            label={item.Checklist_Item_Label__c}
+                            checked={item.Is_Completed__c}
+                            disabled={item.Is_Completed__c}
+                            onchange={handleCheckboxChange}
+                            data-id={item.Id}>
+                        </lightning-input>
+                        <div class="slds-text-body_small slds-m-top_xx-small">
+                            Completed By: {item.CompletedByName}
+                        </div>
+                        <div class="slds-text-body_small">
+                            Completed Date: {item.CompletedDateFormatted}
+                        </div>
+                    </div>
+                </template>
+            </template>
+            <template if:false={checklistItems}>
+                <p>No checklist items found.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

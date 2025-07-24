@@ -76,3 +76,31 @@ Key features:
 1. **Deploy using Salesforce DX:**
    ```bash
    sfdx force:source:deploy -x manifest/package.xml
+
+2. **Assign LWC to Task Record Page:**
+   - Go to Setup → Object Manager → Task → Lightning Record Pages.
+   - Edit the page and add the Checklist Task component.
+   - Save and activate.
+
+##Usage
+- Navigate to a Task record with an associated Checklist Instance.
+- The Lightning card will display:
+   - All checklist items.
+   - Completion status (checkboxes are disabled once completed).
+   - Progress bar showing percent complete.
+- When all items are completed:
+  - Progress bar reaches 100%.
+  - Task Status is automatically updated to Completed.
+  - Page auto-refreshes.
+    
+##Roadmap
+- Add ability to dynamically add/remove checklist items.
+- Provide admin-configurable options for progress behavior.
+- Add flow integration for checklist assignment.
+  
+##Author
+Developed by Charles Funkhouser - Salesforce Consultant
+
+##License
+
+

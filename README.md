@@ -17,6 +17,41 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
+
+Business Use Case/ Requirements:
+•  Checklist → Task Relationship
+  - Each Task has an associated Checklist Instance (Checklist_Instance__c).
+  - A Checklist Instance contains multiple Checklist Items.
+
+•  Checklist Item Management (LWC)
+  - Checklist Items are displayed in a Lightning Web Component.
+  - Checkboxes can be marked as completed, but cannot be unchecked once checked.
+  -	When a checkbox is checked:
+    o	Completed By (User Name) and Completed Date/Time fields are populated.
+    o	Date/Time is displayed in local time (not UTC).
+
+• Task URL Link
+•	The Checklist Instance has a field Task_URL_Link__c.
+•	On the first checkbox update:
+o	If Task_URL_Link__c is blank, populate it with a direct link to the Task record.
+•	Do not overwrite the field if it already has a value.
+
+•  Progress Bar
+•	The Progress Bar shows % of completed checklist items.
+•	It updates immediately after checking an item.
+•	When the Progress = 100%:
+o	Update the Task.Status to Completed.
+o	Perform a page refresh so the user immediately sees the updated state.
+•  Card UI
+•	The Lightning Card Title displays the Checklist Instance Name dynamically.
+•	Progress Bar is shown inside the card, above the checklist items.
+•	The Progress Bar is linear (not circular) and rounded for better aesthetics.
+
+
+
+
+
+
 About the Solution:
 
 # Salesforce Checklist Task LWC

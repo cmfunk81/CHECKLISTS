@@ -2,18 +2,20 @@
   "packageDirectories": [
     {
       "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
+      "versionNumber": "1.0.0.0",
       "path": "force-app",
       "default": true,
       "package": "ChecklistComponent",
       "versionDescription": ""
     }
   ],
+  //OptionalKey is the installation key for the package installation//
   "name": "CHECKLISTS",
-  "namespace": "cf",
+  "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "64.0",
   "packageAliases": {
-    "ChecklistComponent": "0HoKa000000L2bCKAS"
+    "ChecklistComponent": "0HoKa000000L2bCKAS",
+    "ChecklistComponent@1.0.0": "04tKa000002XARMIA4"
   }
 }
